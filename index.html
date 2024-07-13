@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="shortcut icon" href="./image/vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Beta Chop | Restaurant</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/#">
+                <img src="./image/vector.png" alt="Beta Chop">
+                <h1>Betachop<span>.</span></h1>
+            </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav>
+            <ul class="nav-menu menu">
+                <li><a href="/#" class="active">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#restaurant">Restaurants</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+
+                <div class="usersBtn">
+                    <a href="/#" class="loginBtn">Login</a>
+                    <a href="/#" class="signupBtn">Register</a>
+                </div>
+            </ul>
+        </nav>
+    </header>    
+
+    <div class="hero-section" id="hero-section">
+        <div class="hero-content">
+            <h1>MEAL TIME</h1>
+            <span>Fuel Your Study</span>
+            <p>Order delicious and nutritious meals, so you can relax, stay focused and energized.</p>
+            <button class="view-menu-btn">View Menu</button>
+        </div>
+    
+        <div class="hero-image">
+            <img src="./image/Group.png" alt="Steam Image" class="steam-image" />
+            <img src="./image/Steam.png" alt="Steam Image" class="steam-flame" />
+            <div class="image-background">
+                <img src="./image/default.png" alt="Meal Image" class="main-image" />
+            </div>
+        </div>
+        <div class="meal-options">
+            <div class="meal-option eba-egusi" data-image="./image/food1.png" data-background="./image/bgMeal1.png" data-title="Craving something Delicious" data-description="Explore a World of Flavors, Delivered Right to Your Doorstep.">
+                <img src="./image/food1.png" alt="Eba & Egusi" />
+                <div class="meal-content">
+                    <h1>Eba & Egusi</h1>
+                    <span>Sweet Sensation</span>
+                    <h3>N1500</h3>
+                </div>
+            </div>
+    
+            <div class="meal-option fried-rice-egg" data-image="./image/food2.png" data-background="./image/bgMeal2.png" data-title="Fresh & Fast" data-description="Satisfy Your Hunger with Our Easy and Convenient Ordering System">
+                <img src="./image/food2.png" alt="Fried Rice & Egg" />
+                <div class="meal-content">
+                    <h1>Fried Rice & Egg</h1>
+                    <span>Chicken Republic</span>
+                    <h3>N3000</h3>
+                </div>
+            </div>
+    
+            <div class="meal-option small-chops" data-image="./image/food3.png" data-background="./image/bgMeal3.png" data-title="Skip the Line and Save Time" data-description="Get Your Food Fix Anytime, Anywhere">
+                <img src="./image/food3.png" alt="Small Chops" />
+                <div class="meal-content">
+                    <h1>Small Chops</h1>
+                    <span>The Place</span>
+                    <h3>N4000</h3>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="special-features">
+        <h2>Special Features</h2>
+        <div class="features-container">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./image/reserve.png" alt="Customizable Meal Plan">
+                </div>
+                <h3>Customizable <br> Meal Plan</h3>
+                <p>"Personalize your meals to suit your taste. Match items to create your perfect dish"</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./image/timer.png" alt="Real-Time Order Tracking">
+                </div>
+                <h3>Real-Time Order <br> Tracking</h3>
+                <p>"Track your order from kitchen to doorstep. Know exactly when your meal will arrive"</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./image/people.png" alt="Group Order">
+                </div>
+                <h3>Group <br> Order</h3>
+                <p>"Ordering for a crowd? Easily split and customize group orders for everyone"</p>
+            </div>
+        </div>
+    </div>    
+
+    <div class="special-menu" id="categories">
+        <h2>Special Menu</h2>
+        <p>Discover our specially curated menu, designed to delight your taste buds with unique and seasonal dishes</p>
+        <div class="menu-container">
+            <!-- menu item 1 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/banana toast.jpeg" alt="Banana Toast">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Banana Toast</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 2 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Chips.png" alt="Chicken & Chips">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Chicken & Chips</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 3 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Rice.png" alt="Rice">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Fried Rice</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 4 -->	
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Salad.png" alt="Salad">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Ceaser Salad</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 5 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Burger.png" alt="Zinger Burger">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Zinger Burger</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 6 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Shawarma.png" alt="Chicken & Shawarma">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Chicken Shawarma</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 7 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Toast.png" alt="French Toast">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>French Toast</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- menu item 8 -->
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="./image/Chips.png" alt="Chicken & Chips">
+                    <div class="heart-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="menu-details">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                            <li><i class="fa-solid fa-star-sharp"></i></li>
+                        </ul>
+                    </div>
+                    <h1>Chicken & Chips</h1>
+                    <span>Macdonalds</span>
+                    <div class="price-btn">
+                        <h3>N2500</h3>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="view-moreBtn">
+        <a href="#">See more
+            <img src="./image/arrow.png" alt="arrow-right">
+        </a>
+    </div>
+
+    <!-- Our Top Restaurants Section -->
+    <div class="our-restaurants" id="restaurant">
+        <h2>Our Top Restaurant</h2>
+
+        <div class="top-restaurants">
+            <ul>
+                <li><img src="./image/spice.png" alt="Spice Route"></li>
+                <li><img src="./image/kfc.png" alt="Kenterkey Fried Chicken"></li>
+                <li><img src="./image/chicken-rep.png" alt="Chicken Republic"></li>
+                <li><img src="./image/awoof.png" alt="Awoof Brekete"></li>
+                <li><img src="./image/sweet-sensation.png" alt="Sweet Sensation"></li>
+                <li><img src="./image/the-place.png" alt="The Place"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="vendor-section" id="about">
+        <div class="vendor-content">
+            <h1>Become <br> A Vendor</h1>
+            <ul class="vendor-benefits">
+                <li><span class="bullet"></span>Increased Visibility: Reach thousands of hungry customers daily.</li>
+                <li><span class="bullet"></span>Marketing Support: Benefit from our extensive marketing campaigns.</li>
+                <li><span class="bullet"></span>Reliable Delivery: Fast and reliable delivery services.</li>
+                <li><span class="bullet"></span>Analytics and Insights: Access to performance data and insights.</li>
+                <li><span class="bullet"></span>Customer Support: 24/7 dedicated partner support.</li>
+            </ul>
+            <button class="vendor-button">Become a Vendor</button>
+        </div>
+        <div class="vendor-image">
+            <img src="./image/vendor-img.png" alt="Vendor Image">
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="/#">
+                    <img src="./image/vector.png" alt="Beta Chop">
+                    <h1>Betachop<span>.</span></h1>
+                </a>
+            </div>
+    
+            <div class="footer-content">
+                <!-- Contact -->
+                <div class="footer-section contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><div class="iconImg"><img src="./image/envolop-icon.png" alt="Email"></div> hello@betachop.com</li>
+                        <li><div class="iconImg"><img src="./image/ph-icon.png" alt="Phone"></div> +234 924 494 9394</li>
+                        <li><div class="iconImg"><img src="./image/location-icon.png" alt="Address"></div> 1 Cynical Av, Victoria Island, Lagos </li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="footer-section follow-us">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><div class="iconImg"><img src="./image/fb-icon.png" alt="Facebook"></div> Facebook</li>
+                        <li><div class="iconImg"><img src="./image/tw-icon.png" alt="Twitter"></div> Twitter</li>
+                        <li><div class="iconImg"><img src="./image/ig-icon.png" alt="Instagram"></div> Instagram</li>
+                    </ul>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Beta Choppers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Resources -->
+                <div class="footer-section resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/#"><span style="color: #ccc;">Blog</span></a></li>
+                        <li><a href="#">News Update</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Legal -->
+                <div class="footer-section legal">
+                    <span>Terms & conditions</span>
+                    <ul>
+                        <li><a href="/#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="newsletter">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <div class="newsletterForm">
+                            <form action="/#">
+                                <input type="email" placeholder="Email Address" />
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <p><img src="./image/copyright.png" alt="copyright"> 2024 Copyright Betachop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
