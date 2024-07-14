@@ -1,4 +1,3 @@
-// Menu toggle functionality 
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
@@ -107,7 +106,6 @@ function initMealOptionsHover() {
 
 // Initialize all functions
 document.addEventListener('DOMContentLoaded', function() {
-    toggleMenu();
     initMenuToggle();
     initImageSlider();
     initMealOptionsHover();
