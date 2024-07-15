@@ -1,3 +1,4 @@
+// Function to toggle the menu
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
@@ -17,6 +18,23 @@ function initMenuToggle() {
             // Add active class to the clicked item
             this.classList.add('active');
         });
+    });
+}
+
+// Animation for login - sign up form functionality
+function initLoginForm() {
+    const wrapper = document.querySelector('.wrapper');
+    const signUpLink = document.querySelector('.signUp-link');
+    const signInLink = document.querySelector('.signIn-link');
+
+    signUpLink.addEventListener('click', () => {
+        wrapper.classList.add('animate-signIn');
+        wrapper.classList.remove('animate-signUp');
+    });
+
+    signInLink.addEventListener('click', () => {
+        wrapper.classList.add('animate-signUp');
+        wrapper.classList.remove('animate-signIn');
     });
 }
 
@@ -52,7 +70,6 @@ function initMealOptionsHover() {
     const mealOptions = document.querySelectorAll('.meal-option');
     const mainImage = document.querySelector('.hero-image .main-image');
     const heroSection = document.getElementById('hero-section');
-    const heroTitle = document.querySelector('.hero-content h1');
     const heroSpan = document.querySelector('.hero-content span');
     const heroParagraph = document.querySelector('.hero-content p');
     const defaultImageSrc = mainImage.src;
@@ -107,6 +124,7 @@ function initMealOptionsHover() {
 // Initialize all functions
 document.addEventListener('DOMContentLoaded', function() {
     initMenuToggle();
+    initLoginForm();
     initImageSlider();
     initMealOptionsHover();
 });
